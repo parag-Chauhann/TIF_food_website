@@ -1,0 +1,107 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.logo-img {
+    width: 107px;
+    height: 83px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.pizza-img {
+    position: relative; /* Reset position for pizza image */
+    right: 0;
+    height: 90vh;
+}
+
+.red-border-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+}
+
+.infoText {
+    position: absolute;
+    left: 120px; /* Adjust the left value as needed */
+    padding: 20px; /* Add padding for spacing */
+    width: 370px;
+    height: 207px;
+    top: 150px;
+}
+
+.Text {
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 69px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Source Sans Pro;
+    color: #0E2368;
+}
+
+.redText {
+    color: #E23744;
+}
+
+.infoText p {
+    font-family: open Sans;
+    font-weight: 400;
+    font-size: 16.44px;
+    line-height: 27.41px;
+    color: rgba(68, 73, 87, 1);
+}
+
+
+@media (max-width: 500px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+      align-items:center;
+    }
+  
+    .logo-img {
+      display: none; /* Hide the logo on screens with width <= 375px */
+    }
+  
+    .infoText {
+      text-align: center;
+      padding: 10px;
+      max-width: 50%;
+      margin-top: 406px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .Text {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  
+    .pizza-img,
+    .red-border-img {
+      width: 95%; /* Make images cover 95% of the width */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto 30px; /* Center the images horizontally and add margin at the bottom */
+    }
+  
+    .pizza-img {
+      order: 1; /* Set the order to display pizza image first */
+    }
+  
+    .red-border-img {
+      order: 2; /* Set the order to display red border image second */
+    }
+  }
+  
