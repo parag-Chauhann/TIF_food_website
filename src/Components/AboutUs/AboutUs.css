@@ -64,7 +64,7 @@
 
 
 /* Define styles for screens wider than 375px */
-@media (min-width: 376px) {
+@media (min-width: 375px) {
   .About-container {
     display: flex;
     justify-content: space-around;
@@ -72,8 +72,8 @@
     width: 100%;
     height: 467px;
     background: linear-gradient(90.07deg, rgba(30, 42, 93, 0.04) 30.91%, rgba(48, 62, 130, 0.04) 64.79%, rgba(60, 80, 157, 0.04) 91.94%);
-    margin-top: 50px;
-    padding: 20px; /* Add padding as needed */
+    margin-top: 100px;
+    padding: 20px;
   }
 
   .about_left img {
